@@ -10,7 +10,8 @@
     "start:prod": "node dist/main.js",
     "test": "jest --config=jest.json",
     "test:watch": "jest --watch --config=jest.json",
-    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage"
+    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.10",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.4",
     "atob": ">=2.1.0",
